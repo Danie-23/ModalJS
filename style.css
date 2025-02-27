@@ -1,0 +1,44 @@
+body {
+    font-size: 15pt;
+}
+
+dialog {
+  border: none;
+  border-radius: 8px;
+  padding: 20px;
+  background: white;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  
+}
+
+dialog {
+    position: fixed; /* Fixa na tela */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    max-width: 400px;
+    border: none;
+    padding: 20px;
+    border-radius: 10px;
+    background: white;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+@media (max-width: 600px) {
+  dialog {
+    width: 90%;
+  }
+}
+
+
+::backdrop {
+  background: rgba(0, 0, 0, 0.5);
+}
+
+button {
+  margin: 5px;
+  padding: 10px 15px;
+  border: none;
+  cursor: pointer;
+}
