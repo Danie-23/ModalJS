@@ -1,6 +1,8 @@
 class Modal {
-  constructor({ conteudo = '', closeText = 'Fechar',closeColor='gray', botoes = [], backdrop = true }) {
+  constructor({ conteudo = '', closeText = 'Fechar',closeColor='gray', botoes = [], backdrop = true, background='white' }) {
     this.modal = document.createElement('dialog');
+    this.background = background;
+    
     this.closeButton = this.criarBotao(closeText, this.fechar.bind(this), closeColor);
 
     this.conteudoWrapper = document.createElement('div');
@@ -13,6 +15,7 @@ class Modal {
   }
 
   init() {
+    this.modal.style.background = this.background;
     this.modal.appendChild(this.conteudoWrapper);
     this.modal.appendChild(this.closeButton);
 
