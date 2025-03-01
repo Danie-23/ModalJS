@@ -2,6 +2,8 @@
 
 **ModalJS** é uma classe em JavaScript puro para criar e gerenciar **modais interativos** de forma dinâmica e personalizada.  
 
+![logo modalJS](/logo3_1_65451.png)
+
 ## ✨ **Recursos**  
 ✅ Criação dinâmica de modais  
 ✅ Conteúdo e botões personalizados  
